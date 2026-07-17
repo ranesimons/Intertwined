@@ -28,6 +28,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "montserrat", sans-serif;
+  background: #000;
 }
 
 /* 
@@ -1442,33 +1443,23 @@ html, body {
 
 /* Artist header */
 .artist-header {
-  margin-bottom: 24px;
-}
-
-.album-art {
-  display: block;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin: 0 auto 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  margin-bottom: 28px;
 }
 
 .hero-content h1 {
-  font-size: 22px !important;
+  font-size: 26px !important;
   font-weight: 900;
-  letter-spacing: 0.18em;
-  margin: 0 0 6px !important;
+  letter-spacing: 0.2em;
+  margin: 0 0 8px !important;
   padding: 0 !important;
   text-transform: uppercase;
 }
 
 .album-subtitle {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -1491,9 +1482,10 @@ html, body {
   color: white;
   text-decoration: none;
   border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   transition: background 0.2s;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -1515,8 +1507,9 @@ html, body {
 }
 
 /* Footer inside hero */
-.hero-content .site-footer .container {
-  padding: 16px 15px;
+.hero-content .site-footer {
+  padding: 20px 0 8px;
+  text-align: center;
 }
 
 .hero-content .copyright {
