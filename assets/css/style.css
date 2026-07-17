@@ -456,10 +456,15 @@ html, body {
 
 .hero-content {
   color: #ffffff;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  padding: 40px 16px 24px;
+  min-height: 100vh;
+  padding: 40px 16px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .hero-content h1 {
