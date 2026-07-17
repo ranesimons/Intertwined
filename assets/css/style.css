@@ -24,7 +24,7 @@ a:hover, a:focus {
 ================================================== */
 html, body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: "montserrat", sans-serif;
@@ -436,17 +436,17 @@ html, body {
 ================================================== */
 .hero {
   background: url(../img/background.png) center no-repeat;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  display: table;
+  display: block;
   position: relative;
   background-size: cover;
 }
 
 .background-overlay:before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  min-height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -456,9 +456,10 @@ html, body {
 
 .hero-content {
   color: #ffffff;
-  display: table-cell;
-  vertical-align: middle;
+  display: block;
   position: relative;
+  padding: 40px 16px 24px;
+  text-align: center;
 }
 
 .hero-content h1 {
@@ -1439,35 +1440,88 @@ html, body {
   }
 }
 
-/* style.css */
+/* Artist header */
+.artist-header {
+  margin-bottom: 24px;
+}
+
+.album-art {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 0 auto 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content h1 {
+  font-size: 22px !important;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  margin: 0 0 6px !important;
+  padding: 0 !important;
+  text-transform: uppercase;
+}
+
+.album-subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link buttons */
+.links {
+  width: 100%;
+  margin-bottom: 16px;
+}
 
 .links a {
   display: flex;
   align-items: center;
-  margin: 0.5rem auto;
-  padding: 0.75rem 1rem;
+  margin: 0.3rem auto;
+  padding: 0.8rem 1rem;
   width: 100%;
-  max-width: 500px;
-  background: black;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.78);
   color: white;
   text-decoration: none;
-  border-radius: 6px;
-  font-size: 3rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   transition: background 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .links a:hover {
-  background: grey;
+  background: rgba(70, 70, 70, 0.88);
 }
 
 .links a .link-icon {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 
 .links a span {
   flex: 1;
   text-align: center;
-  margin-right: 40px;
+  margin-right: 24px;
+}
+
+/* Footer inside hero */
+.hero-content .site-footer .container {
+  padding: 16px 15px;
+}
+
+.hero-content .copyright {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.15em;
+  margin: 0;
 }
